@@ -1,5 +1,5 @@
 {
-function playGame(playerInput){
+let  playGame = function(playerInput){
 
     clearMessages();
 
