@@ -34,9 +34,9 @@ let  playGame = function(playerInput){
         } else if ( argComputerMove == 'papier' && argPlayerMove == 'papier') {
             printMessage(messageDraw);
         } else if ( argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
-            printMessage('Ty wygrywasz!');
+            printMessage(messagePlayerWin);
         } else if( argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
-            printMessage('Ty wygrywasz!');
+            printMessage(messagePlayerWin);
         } else if ( argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
             printMessage(messageComputerWin);
         } else if ( argComputerMove == 'nożyce' && argPlayerMove == 'nożyce') {
