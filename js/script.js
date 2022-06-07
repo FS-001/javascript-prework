@@ -19,27 +19,30 @@ let  playGame = function(playerInput){
     let displayResult = function(argComputerMove, argPlayerMove){
 
         console.log('moves:', argComputerMove, argPlayerMove);
-        const messagePlayerWin = 'Ty wygrywasz',
+        const messagePlayerWin = 'Ty wygrywasz!',
         messageComputerWin = 'Ja (komputer) wygrywam!',
-        messageDraw = 'Remis!';
+        messageDraw = 'Remis!',
+        choice1 = 'kamień',
+        choice2 = 'papier',
+        choice3 = 'nożyce';
 
-        if( argComputerMove == 'kamień' && argPlayerMove == 'kamień'){
+        if( argComputerMove == choice1 && argPlayerMove == choice1){
             printMessage(messageDraw);
-        } else if ( argComputerMove == 'kamień' && argPlayerMove == 'papier') {
+        } else if ( argComputerMove == choice1 && argPlayerMove == choice2) {
             printMessage(messagePlayerWin);
-        } else if ( argComputerMove == 'kamień' && argPlayerMove == 'nożyce') {
+        } else if ( argComputerMove == choice1 && argPlayerMove == choice3) {
             printMessage(messageComputerWin);
-        } else if( argComputerMove == 'papier' && argPlayerMove == 'kamień'){
+        } else if( argComputerMove == choice2 && argPlayerMove == choice1){
             printMessage(messageComputerWin);
-        } else if ( argComputerMove == 'papier' && argPlayerMove == 'papier') {
+        } else if ( argComputerMove == choice2 && argPlayerMove == choice2) {
             printMessage(messageDraw);
-        } else if ( argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
+        } else if ( argComputerMove == choice2 && argPlayerMove == choice3) {
             printMessage(messagePlayerWin);
-        } else if( argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
+        } else if( argComputerMove == choice3 && argPlayerMove == choice1){
             printMessage(messagePlayerWin);
-        } else if ( argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
+        } else if ( argComputerMove == choice3 && argPlayerMove == choice2) {
             printMessage(messageComputerWin);
-        } else if ( argComputerMove == 'nożyce' && argPlayerMove == 'nożyce') {
+        } else if ( argComputerMove == choice3 && argPlayerMove == choice3) {
             printMessage(messageDraw);
         } else if ( argPlayerMove == 'nieznany ruch') {
             printMessage('Partia nie zostanie zaliczona');
