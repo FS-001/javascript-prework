@@ -16,7 +16,7 @@ let  playGame = function(playerInput){
         }
     }
 
-    function displayResult(argComputerMove, argPlayerMove){
+    let displayResult = function(argComputerMove, argPlayerMove){
 
         console.log('moves:', argComputerMove, argPlayerMove);
         
